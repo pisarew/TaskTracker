@@ -9,6 +9,7 @@ import SwiftUI
 
 protocol TaskInsertDelegate {
     func insert(_ newTask: Task)
+    func update(_ newTask: Task)
 }
 
 struct TasksView: View {
@@ -40,6 +41,13 @@ struct TasksView: View {
                         .font(.subheadline)
                         .foregroundStyle(.gray)
                     }
+                    .swipeActions(allowsFullSwipe: false) {
+                        NavigationLink {
+                            EditView(deligate: self, task: item)
+                        } label: {
+                            Image(systemName: "square.and.pencil")
+                        }
+                    }
                     .padding(.vertical, 2)
                 }
                 .navigationTitle("Задачи")
@@ -59,6 +67,10 @@ struct TasksView: View {
 }
 
 extension TasksView: TaskInsertDelegate {
+    func update(_ newTask: Task) {
+        taskManager.updateTask(newTask)
+    }
+    
     func insert(_ newTask: Task) {
         try? taskManager.addTask(newTask)
     }

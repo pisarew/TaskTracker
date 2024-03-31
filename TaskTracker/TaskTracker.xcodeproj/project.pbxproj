@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7A900C92BAB591D00AB598E /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A900C82BAB591D00AB598E /* EditView.swift */; };
 		F7ABB2F52B9C7F8B00EC6520 /* TaskTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABB2F42B9C7F8B00EC6520 /* TaskTrackerApp.swift */; };
 		F7ABB2F92B9C7F8C00EC6520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7ABB2F82B9C7F8C00EC6520 /* Assets.xcassets */; };
 		F7ABB2FC2B9C7F8C00EC6520 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7ABB2FB2B9C7F8C00EC6520 /* Preview Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7A900C82BAB591D00AB598E /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 		F7ABB2F12B9C7F8B00EC6520 /* TaskTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7ABB2F42B9C7F8B00EC6520 /* TaskTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTrackerApp.swift; sourceTree = "<group>"; };
 		F7ABB2F82B9C7F8C00EC6520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				F7ABB3142B9DDDE900EC6520 /* TasksView.swift */,
 				F7ABB3162B9DE0FA00EC6520 /* CreateTaskView.swift */,
+				F7A900C82BAB591D00AB598E /* EditView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 			files = (
 				F7ABB30F2B9DCB1E00EC6520 /* TaskManager.swift in Sources */,
 				F7ABB3172B9DE0FA00EC6520 /* CreateTaskView.swift in Sources */,
+				F7A900C92BAB591D00AB598E /* EditView.swift in Sources */,
 				F7ABB30D2B9DCAE800EC6520 /* TaskCategory.swift in Sources */,
 				F7ABB3152B9DDDE900EC6520 /* TasksView.swift in Sources */,
 				F7ABB3092B9DCA3300EC6520 /* Task.swift in Sources */,

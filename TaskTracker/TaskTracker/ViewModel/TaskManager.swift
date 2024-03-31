@@ -75,4 +75,19 @@ class TaskManager: ObservableObject {
             throw TaskManagerError.taskNotInsert
         }
     }
+    
+    func updateTask(_ newTask: Task) {
+        let updatingTask = tasksTable.filter(taskId == newTask.taskId)
+        do {
+            try db.run(updatingTask.update(
+                title <- newTask.title,
+                description <- newTask.description,
+                deadline <- newTask.deadline,
+                priority <- newTask.priority.toInt
+            ))
+            tasks = fetchTasks()
+        } catch {
+            print("updating error")
+        }
+    }
 }
